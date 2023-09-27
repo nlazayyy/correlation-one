@@ -1,0 +1,145 @@
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  b{
+    color:white;
+  }
+  
+  p{
+    color:white;
+  }
+   
+  a{
+    color:white;
+  }
+  
+  .wrapper {
+    width: min(100% - 2rem, 12px);
+    margin-inline: auto;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "header header header header"
+      "aside-one main main main  "
+      "aside-one main main main "
+      "row row row row"
+      "footer footer footer footer " ;
+    min-height: 80vh;
+    margin-top: 4rem;
+    gap: 0.5rem;
+  }
+  
+  .grid-item {
+    font-size: 1.5rem;
+    padding: 2rem;
+    background-color: green;
+  }
+  
+  
+  .header {
+    grid-area: header;
+  }
+  
+  .main {
+    grid-area: main;
+  }
+  
+  .aside-one {
+    grid-area: aside-one;
+  }
+  
+  
+  .row{
+    grid-area: row;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: cornflowerblue;
+    align-items: center;
+  }
+  
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;}
+  
+  .fa:hover {
+    opacity: 0.7;}
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;}
+  
+  .fa-instagram {background: #125688;color: white;}
+  
+  
+  .button {
+    border-radius: 4px;
+    background-color: #0c0401;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  @media screen and (max-width: 900px) {
+    body {
+      color: blue;
+    }
+  
+    b{
+    color:black;
+  }
+  
+    p{
+    color:black;
+  }
+   
+    a{
+    color:black;
+  }
+   
+   .grid-item{
+     background-color: lavender;
+   }
+  
+  }
+  
